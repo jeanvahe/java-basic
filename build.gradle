@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'application'
+ 
+// Redefine where Gradle should expect Java source files (*.java)
+sourceSets {
+    main {
+        java {
+            srcDirs 'src'
+        }
+    }
+}
+ 
+// Redefine where .class files are written
+sourceSets.main.output.classesDir = file("classes")
+ 
+// Specify main class to be executed
+mainClassName = "dustin.examples.Main"
+ 
+defaultTasks 'compileJava', 'run'
