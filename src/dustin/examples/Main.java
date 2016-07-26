@@ -13,5 +13,6 @@ public class Main
       out.println(instance.parent);
       out.println(instance.child);
       File.readAndWrite();
+      Regex.match();
    }
 }
