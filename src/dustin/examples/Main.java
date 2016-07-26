@@ -12,5 +12,6 @@ public class Main
       final Main instance = new Main();
       out.println(instance.parent);
       out.println(instance.child);
+      File.readAndWrite();
    }
 }
