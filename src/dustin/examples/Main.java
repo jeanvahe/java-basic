@@ -14,5 +14,7 @@ public class Main
       out.println(instance.child);
       File.readAndWrite();
       Regex.match();
+      MyClass mc = new MyClass();
+      mc.test();
    }
 }
